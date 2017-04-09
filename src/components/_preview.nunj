@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link media="all" rel="stylesheet" href="{{ '/vanilla.css' | path }}">
+  <title>Preview Layout</title>
+</head>
+<body>
+  {{ yield | safe }}
+</body>
+</html>
