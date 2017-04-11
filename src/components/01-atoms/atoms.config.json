@@ -1,6 +1,7 @@
 {
   "context": {
     "title": "Hello World",
-    "text": "Lorem ipsum sit dolar amet"
+    "text": "Lorem ipsum sit dolar amet",
+    "url": "#"
   }
 }
