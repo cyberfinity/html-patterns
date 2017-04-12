@@ -1,0 +1,20 @@
+{
+  "context": {
+    "rubySegments": [
+      {
+        "base": "鬼",
+        "annotation": "き"
+      },
+      {
+        "base": "門",
+        "pre": " (",
+        "annotation": "もん",
+        "post": ") "
+      },
+      {
+        "base": "鬼",
+        "annotation": "き"
+      }
+    ]
+  }
+}

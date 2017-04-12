@@ -1,0 +1,1 @@
+<ruby>{% for segment in rubySegments %}{{ segment.base }}{% if segment.pre %}<rp>{{ segment.pre }}</rp>{% endif %}<rt>{{ segment.annotation }}</rt>{% if segment.post %}<rp>{{ segment.post }}</rp>{% endif %}{% endfor %}</ruby>
