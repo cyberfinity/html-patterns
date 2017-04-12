@@ -1,0 +1,19 @@
+{
+  "context": {
+    "text": "Semantics"
+  },
+  
+  "variants": [
+    {
+      "name": "default",
+      "label": "Generic"
+    },
+    {
+      "name": "abbreviation",
+      "context": {
+        "text": "TLA",
+        "term": "Three Letter Acronym"
+      }
+    }
+  ]
+}
