@@ -1,0 +1,1 @@
+<abbr{{ expansion | optattr("title") }}>{{ text }}</abbr>

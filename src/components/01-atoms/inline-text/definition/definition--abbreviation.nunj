@@ -1,1 +1,1 @@
-<dfn><abbr{{ term | optattr("title")}}>{{ text }}</abbr></dfn>
+<dfn><abbr{{ expansion | optattr("title")}}>{{ text }}</abbr></dfn>

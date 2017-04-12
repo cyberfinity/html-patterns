@@ -2,7 +2,7 @@
   "context": {
     "text": "Semantics"
   },
-  
+
   "variants": [
     {
       "name": "default",
@@ -12,7 +12,7 @@
       "name": "abbreviation",
       "context": {
         "text": "TLA",
-        "term": "Three Letter Acronym"
+        "expansion": "Three Letter Acronym"
       }
     }
   ]
