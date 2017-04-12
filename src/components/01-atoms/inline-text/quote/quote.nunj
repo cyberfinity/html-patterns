@@ -1,0 +1,1 @@
+<q{{ url | optattr("cite") }}>{{ text }}</q>
