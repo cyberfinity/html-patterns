@@ -1,0 +1,6 @@
+{
+  "handle": "kbd",
+  "context": {
+    "text": "rm -rf /"
+  }
+}
