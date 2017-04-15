@@ -1,0 +1,1 @@
+<ins{{ editTime | optattr('datetime') }}{{ url | optattr('cite') }}>{{ text }}</ins>

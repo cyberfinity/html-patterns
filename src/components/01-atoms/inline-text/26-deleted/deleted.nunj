@@ -1,0 +1,1 @@
+<del{{ editTime | optattr('datetime') }}{{ url | optattr('cite') }}>{{ text }}</del>
