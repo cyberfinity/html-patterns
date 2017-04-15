@@ -1,0 +1,15 @@
+{
+  "context": {
+    "text": "23rd August 2032",
+    "dateTimeOrDuration": "2032-08-13"
+  },
+
+  "variants": [
+    {
+      "name": "in-content",
+      "context": {
+        "text": false
+      }
+    }
+  ]
+}

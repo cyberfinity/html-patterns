@@ -1,0 +1,5 @@
+{% if text %}
+<time datetime="{{ dateTimeOrDuration }}">{{ text }}</time>
+{% else %}
+<time>{{ dateTimeOrDuration }}<time>
+{% endif %}
