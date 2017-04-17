@@ -5,4 +5,4 @@ The `<hr>` element represents a paragraph-level thematic break, e.g. a scene cha
 
 ## See also
 
-* [WHATWG HTML5 specification for `<hr`](https://html.spec.whatwg.org/multipage/semantics.html#the-hr-element)
+* [WHATWG HTML5 specification for `<hr>`](https://html.spec.whatwg.org/multipage/semantics.html#the-hr-element)
