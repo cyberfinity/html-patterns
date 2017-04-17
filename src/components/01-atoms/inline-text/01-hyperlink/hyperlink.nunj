@@ -1,1 +1,1 @@
-<a href="{{ url }}">{{ text }}</a>
+<a{{ link.url | optattr('href') }}>{{ link.text }}</a>

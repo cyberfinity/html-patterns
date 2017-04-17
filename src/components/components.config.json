@@ -1,8 +1,13 @@
 {
   "context": {
+    "classPrefix": "cy-",
     "title": "Hello World",
     "subtitle": "The archetypal greeting",
     "text": "Lorem ipsum sit dolar amet",
-    "url": "#"
+    "url": "#",
+    "link": {
+      "text": "Click me!",
+      "url": "#"
+    }
   }
 }

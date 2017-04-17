@@ -1,9 +1,19 @@
 {
   "handle": "a",
+  "collated": true,
   "variants": [
     {
       "name": "default",
       "label": "Link"
+    },
+    {
+      "name": "placeholder",
+      "context": {
+        "link": {
+          "url": false,
+          "text": "Can't click me"
+        }
+      }
     }
   ]
 }

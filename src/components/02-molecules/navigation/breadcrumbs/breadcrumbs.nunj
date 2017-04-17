@@ -1,0 +1,17 @@
+<nav class="{{ classPrefix }}breadcrumbs" typeof="schema:BreadcrumbList" aria-label="breadcrumbs">
+  <p>
+  {%- for link in breadcrumbs.links %}
+    {%- if link.url %}
+      <span property="schema:itemListElement" typeof="schema:ListItem">
+        <a href="{{ link.url }}" property="schema:item" typeof="schema:WebPage"><span property="schema:name">{{ link.text }}</span></a>
+        <meta property="schema:position" content="{{ loop.index }}">
+      </span>
+    {% else %}
+      <a>{{ link.text }}</a>
+    {% endif %}
+    {% if not loop.last %}
+      <span aria-hidden="true">{{ breadcrumbs.separator | escape }}</span>
+    {% endif %}
+  {%- endfor -%}
+  </p>
+</nav>

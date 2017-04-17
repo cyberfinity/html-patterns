@@ -1,0 +1,25 @@
+{
+  "tags": ["rdfa", "vocab:schema.org"],
+  "context": {
+    "breadcrumbs": {
+      "links": [
+        {
+          "text": "Home",
+          "url": "/"
+        },
+        {
+          "text": "Products",
+          "url": "/products/"
+        },
+        {
+          "text": "Widgets",
+          "url": "/products/widgets/"
+        },
+        {
+          "text": "FlibbleMaster 5000"
+        }
+      ],
+      "separator": ">"
+    }
+  }
+}
