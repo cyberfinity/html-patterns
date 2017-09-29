@@ -1,0 +1,33 @@
+{
+  "handle": "dl",
+  "context": {
+    "definitions": [
+      {
+        "terms": [
+          "Burpman"
+        ],
+        "descriptions": [
+          "A fictional character, who frequently appears in BCP comics. Burpman is a yellow alien from the planet Burpland."
+        ]
+      },
+      {
+        "terms": [
+          "Author",
+          "Editor"
+        ],
+        "descriptions": [
+          "James Nash."
+        ]
+      },
+      {
+        "terms": [
+          "Bog"
+        ],
+        "descriptions": [
+          "A swamp.",
+          "Slang for toilet."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+<dl>
+  {% for def in definitions -%}
+    {% for term in def.terms -%}
+      <dt>{{ term }}</dt>
+    {% endfor %}
+    {%- for descr in def.descriptions -%}
+      <dd>{{ descr }}</dd>
+    {%- endfor %}
+    
+  {% endfor %}
+</dl>

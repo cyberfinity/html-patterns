@@ -1,0 +1,11 @@
+{
+  "handle": "ul",
+  "context": {
+    "items": [
+      "foo",
+      "bar",
+      "baz",
+      "quux"
+    ]
+  }
+}
