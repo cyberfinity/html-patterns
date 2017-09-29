@@ -1,0 +1,12 @@
+<blockquote{{ (citeUrl | optattr('cite')) if not citeText }}>
+  {{ quote | escape }}
+  {%- if citeText %}
+    <footer>
+      <cite>
+        {%- if citeUrl %}<a href="{{ citeUrl }}">{% endif -%}
+        {{ citeText }}
+        {%- if citeUrl %}</a>{% endif -%}
+      </cite>
+    </footer>
+  {%- endif %}
+</blockquote>

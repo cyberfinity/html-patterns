@@ -1,0 +1,33 @@
+{
+  "context": {
+    "quote": "The <blockquote> element represents content that is quoted from another source, optionally with a citation which must be within a <footer> or <cite> element, and optionally with in-line changes such as annotations and abbreviations."
+  },
+  "variants": [
+    {
+      "name": "default",
+      "label": "Quote only"
+    },
+    {
+      "name": "url-citation",
+      "label": "With citation URL only",
+      "context": {
+        "citeUrl": "https://w3c.github.io/html/grouping-content.html#the-blockquote-element"
+      }
+    },
+    {
+      "name": "text-citation",
+      "label": "With citation text only",
+      "context": {
+        "citeText": "HTML 5.2 Editor's Draft"
+      }
+    },
+    {
+      "name": "full-citation",
+      "label": "With full citation",
+      "context": {
+        "citeUrl": "https://w3c.github.io/html/grouping-content.html#the-blockquote-element",
+        "citeText": "HTML 5.2 Editor's Draft"
+      }
+    }
+  ]
+}
