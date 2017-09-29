@@ -1,0 +1,3 @@
+<aside class="pull-quote">
+  {{ quote }}
+</aside>
