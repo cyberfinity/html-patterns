@@ -1,7 +1,7 @@
 {
-  "name": "vanilla-ui",
+  "name": "@cyberfinity/html-patterns",
   "version": "0.0.1",
-  "description": "Cyberfinity Vanilla UI library",
+  "description": "HTML pattern library for Cyberfinity websites",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -11,16 +11,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "vanilla",
-    "css",
-    "sass",
-    "scss",
-    "icon",
-    "font",
-    "brand",
+    "html",
+    "pattern library",
+    "ui components",
     "ui",
+    "markup",
+    "semantic",
+    "accessibility",
     "web",
-    "style",
     "guide",
     "design"
   ],

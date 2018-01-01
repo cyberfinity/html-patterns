@@ -1,17 +1,11 @@
-# Cyberfinity vanilla UI library
+# HTML pattern library for Cyberfinity websites
 
-A base set of UI components for [Cyberfinity](http://www.cyberfinity.net/) websites with some vanilla styling.
-
-Additionally, this package can generate a living style guide to visualise and document the available UI components.
-
-## Using this library
-
-**TBC.** (Usage instructions for downstream projects that _consume_ this library's CSS files will go here)
+A web-based library of HTML patterns for UI components used by [Cyberfinity](http://www.cyberfinity.net/) websites.
 
 
 ## Development pre-requisites and setup
 
-In order to work on this library and/or generate the style guide, you will need the following:
+In order to work on this project, you will need the following:
 
 * [Node.js](https://nodejs.org/)
 
@@ -27,7 +21,7 @@ For day to day development, your best bet is the local dev server. This will do 
 
 1. Clean dist folders
 1. Build CSS library
-1. Launch Fractal web server
+1. Launch [Fractal](http://fractal.build/) web server
 1. Begin watching source files for changes
     * Any changes should trigger an automatic update in your web browser so you get a live preview
 
