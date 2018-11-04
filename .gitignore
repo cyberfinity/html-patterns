@@ -33,8 +33,6 @@ Temporary Items
 debug.log
 npm-debug.log
 node_modules/
-# TODO Need to undo this later
-package-lock.json
 
 # Excluding build
 dist/
