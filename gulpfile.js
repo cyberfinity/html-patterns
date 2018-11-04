@@ -3,67 +3,68 @@
 const cssLib = require('./index');
 
 const gulp = require('gulp');
-const gulpSequence = require('gulp-sequence');
 const del = require('del');
 
 // Load SASS tasks
-require('./gulp/sass-tasks')(gulp);
+const sassTasks = require('./gulp/sass-tasks');
 
 // Load Fractal tasks
-require('./gulp/fractal-tasks')(gulp);
+const fractalTasks = require('./gulp/fractal-tasks');
 
 
 
 // ========== LIB tasks =============
 
 // Build entire library
-gulp.task('lib:build', ['sass:build']); // Only SASS for now, but more to come in due course!
+const libBuild = sassTasks.sassBuild; // Only SASS for now, but more to come in due course!
+libBuild.displayName = 'lib:build';
 
 // Watch all library source files
 // NOTE: This deliberately does NOT do an initial build
-gulp.task('lib:watch', ['sass:watch']);
+const libWatch = sassTasks.sassWatch;
+libWatch.displayName = 'lib:watch';
 
 // Clean library build output
-gulp.task('lib:clean', function(){
+function libClean(){
   return del([
     cssLib.dirs.dist + '/**/*'
   ]);
-});
+}
+libClean.displayName = 'lib:clean';
 
 
 
 // ========== Fractal static style guide tasks ===========
 
-// Clean everything, build CSS lib and then build style guide
-gulp.task('sg:build', function(cb){
-  gulpSequence('clean', 'lib:build', 'fractal:build', cb);
-});
-
 // Completely wipe contents of style guide dist dir
-gulp.task('sg:clean', function(){
+function sgClean(){
   return del([
     cssLib.dirs.sgDist + '/**/*'
   ]);
-});
+}
+sgClean.displayName = 'sg:clean';
 
 
 // ========== Composite tasks =============
 
 // Clean ALL THE THINGS!
-gulp.task('clean', ['lib:clean', 'sg:clean']);
+const clean = gulp.parallel(libClean, sgClean);
+
+// Clean everything, build CSS lib and then build style guide
+const sgBuild = gulp.series(clean, libBuild, fractalTasks.fractalBuild);
+sgBuild.displayName = 'sg:build';
 
 // Launch dev server
-gulp.task('serve', ['clean'], function(cb){
-  // Now that we've got a clean slate, do a fresh
-  // build of the library and THEN kick off the
-  // watchers and Fractal server
-  gulpSequence('lib:build', ['lib:watch', 'fractal:start'], cb);
-});
+const serve = gulp.series(clean, libBuild, gulp.parallel(libWatch, fractalTasks.fractalStart));
 
 // Clean only the library
-gulp.task('build', ['lib:clean'], function(cb){
-  gulpSequence('lib:build', cb);
-});
+const build = gulp.series(libClean, libBuild);
 
-// Default task is to build
-gulp.task('default', ['build']);
+
+module.exports = {
+  clean,
+  serve,
+  build,
+
+  default: build
+}

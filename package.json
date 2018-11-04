@@ -32,9 +32,8 @@
     "@frctl/fractal": "^1.1.7",
     "@frctl/nunjucks": "^1.0.3",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sequence": "^1.0.0",
     "gulp-sourcemaps": "^2.6.4"
   }
 }
