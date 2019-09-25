@@ -29,10 +29,10 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@frctl/fractal": "^1.1.7",
-    "@frctl/nunjucks": "^2.0.0",
-    "del": "^4.0.0",
-    "gulp": "^4.0.0",
+    "@frctl/fractal": "^1.2.0",
+    "@frctl/nunjucks": "^2.0.1",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
   }
