@@ -3,7 +3,9 @@
 const cssLib = require('../index');
 
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const dartSass = require('sass');
+const gulpSass = require('gulp-sass');
+const sass = gulpSass(dartSass);
 const sourcemaps = require('gulp-sourcemaps');
 
 function sassBuild() {
